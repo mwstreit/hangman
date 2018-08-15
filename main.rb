@@ -2,7 +2,7 @@ require 'sinatra'
 #require 'sinatra\reloader'
 
 
-require '.\lib\hangman'
+require './lib/hangman'
 #http://localhost:4567/?string=&offset=0
 
 
