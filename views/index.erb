@@ -1,0 +1,78 @@
+<html>
+  <head>
+  <style>
+  
+  body {
+    text-align: center;
+    font-family: courier;
+    font-size: 36px;
+    background-image: url("bg.png");
+  }
+  div.image{ 
+  }
+  .textbox{
+    background: #a6a6a6;
+    font-family: courier;
+    font-size: 36px;
+    width: 1.75em;
+    height: 1.5em;
+    border: 2px;
+    border-radius: 3px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  input[type=submit] {
+    background: #666666;
+    border: 2px;
+    height: 1.5em;
+    font-size: 36px;
+    font-family: courier;
+    border-radius: 3px;
+  }
+  div.wrong{
+    margin: 0px auto;
+    background: #a6a6a6;
+    width: 12em;
+    height: 1.5em;
+    color: #990000;
+    border-radius: 0px 0px 3px 3px;
+  }
+  div.blanks{
+    margin: 0px auto;
+    background: #a7a7a7;
+    width: 14em;
+    height: 1.5em;
+    border: 0px;
+    border-radius: 3px;
+  }
+
+  </style>
+    <title>
+    HANGMAN
+    </title>
+  </head>
+  <body>
+  
+ 
+ <h3>Let's Play Hangman!</h3>
+    <p>
+    <div class ="image">
+    <image src="<%= image %>" width="500px" >
+    </div>
+    <%= message %>
+    <br/>
+    <div class="blanks">
+    <%= blanks %>
+    </div>
+    <div class="wrong">
+    <%= wrong_letters %>
+    </div>
+    <br/>
+    <form>
+      <input type="text" name="choice" autofocus="autofocus" class="textbox" maxlength="1"/>
+      <input type="submit" value="Guess" />
+      <input type="submit" name="newgame" value="New Game" />
+    </form>
+    </p>
+  </body>
+</html>
